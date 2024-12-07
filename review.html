@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>النظام الشمسي</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .feed {
+        background-color: #e9ecef;
+        padding: 20px;
+        border-radius: 2rem;
+        max-width: 50rem;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="feed my-4">
+      <h2 class="text-center">أخبرنا برأيك</h2>
+      <form>
+        <div class="mb-3">
+          <label for="firstName" class="form-label">الاسم الأول:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="firstName"
+            name="firstName"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="lastName" class="form-label">الاسم العائلي:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="lastName"
+            name="lastName"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="birthDate" class="form-label">تاريخ الميلاد:</label>
+          <input
+            type="date"
+            class="form-control"
+            id="birthDate"
+            name="birthDate"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="gender" class="form-label">النوع:</label>
+          <select class="form-select" id="gender" name="gender" required>
+            <option value="ذكر">ذكر</option>
+            <option value="أنثى">أنثى</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">البريد الإلكتروني:</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            name="email"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="governorate" class="form-label">المحافظة:</label>
+          <p style="display: none">made by eya chihi</p>
+          <select
+            class="form-select"
+            id="governorate"
+            name="governorate"
+            required
+          >
+            <option value="تونس">تونس</option>
+            <option value="أريانة">أريانة</option>
+            <option value="منوبة">منوبة</option>
+            <option value="بن عروس">بن عروس</option>
+            <option value="سوسة">سوسة</option>
+            <option value="صفاقس">صفاقس</option>
+            <option value="قابس">قابس</option>
+            <option value="مدنين">مدنين</option>
+            <option value="توزر">توزر</option>
+            <option value="القصرين">القصرين</option>
+            <option value="سيدي بوزيد">سيدي بوزيد</option>
+            <option value="المهدية">المهدية</option>
+            <option value="نابل">نابل</option>
+            <option value="زغوان">زغوان</option>
+            <option value="باجة">باجة</option>
+            <option value="جندوبة">جندوبة</option>
+            <option value="الكاف">الكاف</option>
+            <option value="قفصة">قفصة</option>
+            <option value="صفاقس">صفاقس</option>
+            <option value="تطاوين">تطاوين</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="feedback" class="form-label">رأيك:</label>
+          <textarea
+            class="form-control"
+            id="feedback"
+            name="feedback"
+            rows="4"
+            required
+          ></textarea>
+        </div>
+
+        <div class="mb-3">
+          <label for="rating" class="form-label">التقييم (من 1 إلى 5):</label>
+          <select class="form-select" id="rating" name="rating" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">إرسال</button>
+        <button type="button" class="btn btn-danger">
+          <a href="index.html" style="text-decoration: none; color: white"
+            >خلف</a
+          >
+        </button>
+      </form>
+    </div>
+  </body>
+</html>

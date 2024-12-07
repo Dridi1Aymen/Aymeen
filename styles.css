@@ -1,0 +1,69 @@
+body {
+  font-family: "Cairo", sans-serif;
+  font-size: large;
+  background-color: #f8f9fa;
+  color: #343a40;
+  display: grid;
+  grid-template-areas:
+    "nav nav nav nav"
+    "head head sc sc"
+    "ft ft ft ft";
+}
+
+nav {
+  height: 5rem;
+  grid-area: nav;
+}
+
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 20px 0;
+  grid-area: head;
+  border-left: solid black 5px;
+}
+section {
+  grid-area: sc;
+}
+
+footer {
+  grid-area: ft;
+  height: 6rem;
+}
+.planets {
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.5rem;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.pp {
+  text-align: right;
+}
+.hh {
+  text-align: center;
+}
